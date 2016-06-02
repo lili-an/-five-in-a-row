@@ -1,0 +1,150 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/close/iconfont.eot");
+  /* IE9*/
+  src: url("../font/close/iconfont.eot#iefix") format("embedded-opentype"), url("../font/close/iconfont.woff") format("woff"), url("../font/close/iconfont.ttf") format("truetype"), url("../font/close/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "download";
+  src: url("../font/download/iconfont.eot");
+  /* IE9*/
+  src: url("../font/download/iconfont.eot#iefix") format("embedded-opentype"), url("../font/download/iconfont.woff") format("woff"), url("../font/download/iconfont.ttf") format("truetype"), url("../font/download/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "叶根友毛笔行书2.0版";
+  src: url("../font/ygyxsziti2.0.ttf");
+}
+
+i {
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#canvas, .box, .cart, .cart .tip {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#canvas {
+  background: rgba(205, 159, 20, 0.79);
+  border-radius: 3%;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: url(../image/mj.jpg) 100% 100% no-repeat;
+}
+
+.cart {
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+
+.cart p {
+  width: 135px;
+  font-family: "叶根友毛笔行书2.0版";
+  font-size: 43px;
+  margin-left: 75px;
+  margin-top: 97px;
+}
+
+.cart .close {
+  font-family: iconfont;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  bottom: null;
+  left: null;
+  transform: rotate(0deg);
+  transition: transform .5s ease;
+  cursor: pointer;
+}
+
+.cart .close:hover {
+  transform: rotate(360deg);
+}
+
+.cart .tip {
+  width: 400px;
+  height: 300px;
+  background: url(../image/n.jpg) -12px -59px no-repeat;
+}
+
+.cart .tip span {
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10%;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "叶根友毛笔行书2.0版";
+  font-size: 23px;
+  cursor: pointer;
+  transform: scale(0.8, 0.8);
+  transition: transform .5s ease;
+}
+
+.cart .tip span:hover {
+  transform: scale(1, 1);
+  background: #239f89;
+}
+
+#restart {
+  background: #4eeb17;
+}
+
+#qipu {
+  background: #4218ed;
+}
+
+.save {
+  height: 50px;
+  width: 100px;
+  background: #d49f3b;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  line-height: 50px;
+  display: none;
+}
+
+.save #save {
+  text-decoration: none;
+  color: #14e90f;
+  font-size: 25px;
+  font-family: "叶根友毛笔行书2.0版";
+  transition: font-size .3s ease;
+}
+
+.save #save:hover {
+  font-size: 30px;
+}
